@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
-* main - 8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity
+* main - Entry point
 *
 * Return: Always 1 (Success)
 */
