@@ -9,18 +9,16 @@
 int main(void)
 {
 	int i;
-	long int fib1 = 1, fib2 = 2, fib3;
-
-	printf("%ld, %ld", fib1, fib2);
+	long int fib1 = 1, fib2 = 2, fib3, sum = 3;
 
 	for (i = 2; i < 50; i++)
 	{
 		fib3 = fib1 + fib2;
-		printf(", %ld", fib3);
+		sum += fib3;
 		fib1 = fib2;
 		fib2 = fib3;
 	}
-	printf("\n");
+	printf("%ld\n", sum);
 
 	return (0);
 }
