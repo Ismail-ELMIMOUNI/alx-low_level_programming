@@ -3,25 +3,25 @@
 /**
  * print_number - prints an integer using _putchar
  * @n: integer to print
+ * Return: 0
  */
 
 void print_number(int n)
 {
-	unsigned int num;
+	unsigned int n1;
+
+	n1 = n;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		num = -n;
+		n1 = -n;
 	}
-	else
+
+	if (n1 / 10 != 0)
 	{
-		num = n;
+		print_number(n1 / 10);
 	}
-
-	if (num / 10)
-		print_number(num / 10);
-
-		_putchar((num % 10) + '0');
-	}
+	_putchar((n1 % 10) + '0');
+}
 
